@@ -1,27 +1,79 @@
-# AppAgenda
+<h1>API Laravel con Angular</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+<p>Este proyecto consiste en una API desarrollada en Laravel, diseñada para gestionar operaciones CRUD completas, incluyendo autenticación y manejo de tablas relacionadas. Esta API será consumida por un frontend desarrollado en Angular, ofreciendo una solución robusta y eficiente para la gestión de datos.</p>
 
-## Development server
+<h2>Características</h2>
+<ul>
+    <li><strong>Autenticación Segura:</strong> Implementación de JWT (JSON Web Tokens) para la autenticación de usuarios, asegurando que solo usuarios autorizados puedan acceder a los recursos.</li>
+    <li><strong>Operaciones CRUD:</strong> Soporte completo para Crear, Leer, Actualizar y Eliminar recursos en la base de datos.</li>
+    <li><strong>Relaciones de Tablas:</strong> Manejo de relaciones entre tablas, permitiendo operaciones complejas y consultas eficientes.</li>
+    <li><strong>Validación de Datos:</strong> Validaciones exhaustivas en las solicitudes, garantizando la integridad y consistencia de los datos.</li>
+    <li><strong>API Documentada:</strong> Documentación completa de la API utilizando Swagger, facilitando la comprensión y uso de los endpoints.</li>
+    <li><strong>Integración con Frontend en Angular:</strong> Diseñada para ser consumida por un frontend desarrollado en Angular, proporcionando una experiencia de usuario fluida y dinámica.</li>
+</ul>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h2>Tecnologías Utilizadas</h2>
+<ul>
+    <li><strong>Backend:</strong> Laravel</li>
+    <li><strong>Frontend:</strong> Angular</li>
+    <li><strong>Autenticación:</strong> Auth Sanctum</li>
+    <li><strong>Base de Datos:</strong> MySQL</li>
+    <li><strong>Documentación de API:</strong> Swagger</li>
+    <li><strong>Framework de UI:</strong> PrimeNG</li>
+    <li><strong>Lenguaje:</strong> TypeScript</li>
+</ul>
 
-## Code scaffolding
+<h2>Instalación y Configuración del Backend (Laravel)</h2>
+<ol>
+    <li><strong>Clonar el repositorio:</strong>
+        <pre><code>git clone https://github.com/Jean10112002/api-laravel-agendaApp.git
+cd api-laravel-agendaApp</code></pre>
+    </li>
+    <li><strong>Instalar dependencias:</strong>
+        <pre><code>composer install
+npm install</code></pre>
+    </li>
+    <li><strong>Configurar el entorno:</strong>
+        <p>Copia el archivo <code>.env.example</code> a <code>.env</code> y configura las variables de entorno necesarias (base de datos, autenticación, etc.).</p>
+    </li>
+    <li><strong>Generar la clave de la aplicación:</strong>
+        <pre><code>php artisan key:generate</code></pre>
+    </li>
+    <li><strong>Migrar y sembrar la base de datos:</strong>
+        <pre><code>php artisan migrate --seed</code></pre>
+    </li>
+    <li><strong>Iniciar el servidor:</strong>
+        <pre><code>php artisan serve</code></pre>
+    </li>
+</ol>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2>Instalación y Configuración del Frontend (Angular)</h2>
+<ol>
+    <li><strong>Instalar Angular CLI:</strong>
+        <pre><code>npm install -g @angular/cli</code></pre>
+    </li>
+    <li><strong>Crear una nueva aplicación Angular:</strong>
+        <pre><code>ng new nombre-de-tu-aplicacion</code></pre>
+    </li>
+    <li><strong>Navegar al directorio de la aplicación:</strong>
+        <pre><code>cd nombre-de-tu-aplicacion</code></pre>
+    </li>
+    <li><strong>Instalar PrimeNG y PrimeIcons:</strong>
+        <pre><code>npm install primeng primeicons</code></pre>
+    </li>
+    <li><strong>Iniciar el servidor de desarrollo:</strong>
+        <pre><code>ng serve</code></pre>
+    </li>
+</ol>
 
-## Build
+<h2>Uso</h2>
+<p>Una vez que el servidor esté en funcionamiento, la API estará disponible en <code>http://localhost:8000</code>. Puedes acceder a la documentación de la API en <code>http://localhost:8000/api/documentation</code>.</p>
+<p>El frontend en Angular se iniciará en <code>http://localhost:4200</code>. Este frontend consumirá la API de Laravel para realizar las operaciones CRUD.</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h2>Contribución</h2>
+<p>¡Contribuciones son bienvenidas! Si deseas colaborar, por favor abre un issue o envía un pull request con tus cambios.</p>
 
-## Running unit tests
+<h2>Licencia</h2>
+<p>Este proyecto está bajo la licencia MIT. Consulta el archivo <code>LICENSE</code> para más detalles.</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
