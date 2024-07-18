@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 
-export const PRIVATE_ROUTES: Routes = [
+export default [
   {
     path: '',
-    loadComponent:()=>import('./pages/dashboard/dashboard.component').then((c)=>c.DashboardComponent)
+    loadComponent:()=>import('./pages/dashboard/dashboard.component')
   },
-];
+] as Routes;

@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
 
-export const PUBLIC_ROUTES: Routes = [
+export default [
   {
     path: '',
-    loadComponent:()=>import('./pages/home/home.component').then((c)=>c.HomeComponent)
+    loadComponent:()=>import('./pages/home/home.component')
   },
   {
     path:'auth',
-    loadChildren: () => import('../auth/auth.routes').then((m) => m.AUTH_ROUTES),
+    loadChildren: () => import('../auth/auth.routes'),
   }
-];
+] as Routes;
