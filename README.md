@@ -49,17 +49,14 @@ npm install</code></pre>
 
 <h2>Instalación y Configuración del Frontend (Angular)</h2>
 <ol>
-    <li><strong>Instalar Angular CLI:</strong>
-        <pre><code>npm install -g @angular/cli</code></pre>
+    <li><strong>Clonar el repositorio Front end:</strong>
+        <pre><code>git clone https://github.com/Jean10112002/App-Agenda-Angular.git</code></pre>
     </li>
-    <li><strong>Crear una nueva aplicación Angular:</strong>
-        <pre><code>ng new nombre-de-tu-aplicacion</code></pre>
+    <li><strong>Entrar a la carpeta</strong>
+        <pre><code>cd App-Agenda-Angular</code></pre>
     </li>
-    <li><strong>Navegar al directorio de la aplicación:</strong>
-        <pre><code>cd nombre-de-tu-aplicacion</code></pre>
-    </li>
-    <li><strong>Instalar PrimeNG y PrimeIcons:</strong>
-        <pre><code>npm install primeng primeicons</code></pre>
+    <li><strong>Instalar dependencias:</strong>
+        <pre><code>npm i</code></pre>
     </li>
     <li><strong>Iniciar el servidor de desarrollo:</strong>
         <pre><code>ng serve</code></pre>
