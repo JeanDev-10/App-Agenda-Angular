@@ -6,14 +6,16 @@ import { environment } from '../../../../environments/environment';
 })
 export class AuthService {
   private readonly api:string=environment.apiUrl;
-  constructor() { }
-  login(){
+  //constructor() { }
+  /*login(){
 
-  }
+  } 
   register(){
 
   }
   logout(){
 
   }
+
+  */
 }
