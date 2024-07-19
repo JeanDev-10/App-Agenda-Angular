@@ -8,5 +8,5 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './home.component.scss'
 })
 export default class HomeComponent {
-
+  
 }
