@@ -12,6 +12,15 @@ body {
     text-align: center;
 }
 
+.container .container__header{
+    display: inline;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -20,14 +29,14 @@ body {
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 
 .header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 55px;
     font-weight: bold;
 }
 
@@ -48,24 +57,22 @@ body {
 }
 
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     background-color: #e0e0e0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.avatar::before {
-    content: '👤';
-    font-size: 50px;
+    object-fit: cover;
 }
 
 .profile p {
     font-size: 18px;
     margin: 10px 0 5px;
 }
+
+
 
 .links {
     display: flex;
@@ -77,6 +84,11 @@ body {
     width: 20px;
     height: 20px;
 }
+
+.my-svg-icon {
+    stroke: #00aeff; /* O usa stroke: rgb(0, 255, 255); */
+}
+  
 
 .app-button {
     padding: 10px 20px;
@@ -90,3 +102,28 @@ body {
 .app-button:hover {
     background-color: #555;
 }
+
+@media (max-width: 1378px){
+    .avatar {
+        width: 200px;
+        height: 200px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 3px;
+    }
+
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+}
+
