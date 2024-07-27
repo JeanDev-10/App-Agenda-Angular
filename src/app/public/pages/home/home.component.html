@@ -1,4 +1,8 @@
-
+<div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+      <source src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov" type="video/mp4">
+    </video>
+</div>
 <section>
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-angular icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -28,6 +32,7 @@
         <div class="profile">
             <img class="avatar" height="250px" width="250px" src="img/npc1.png" alt="jean pierre rodriguez">
             <p>Jean Pierre Rodriguez</p>
+            <label for="">(Desarrollador FullStack)</label>
             <div class="links">
                 <a href="https://www.linkedin.com/in/jean-rodriguez-dev/" target="_blank"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin my-svg-icon">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -48,6 +53,7 @@
         <div class="profile">
             <img class="avatar" height="250px" width="250px" src="img/npc2.png" alt="jahir celorio malave">
             <p>Jahir Celorio Malavé</p>
+            <label for="">(Desarrollador FullStack)</label>
             <div class="links">
                 <a href="https://www.linkedin.com/in/jahir-celorio/" target="_blank"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin my-svg-icon">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -66,5 +72,5 @@
             </div>
         </div>
     </div>
-    <button class="app-button">Ir a la aplicación</button>
+    <button class="app-button" (click)="goToLogin()">Ir a la aplicación</button>
 </div>

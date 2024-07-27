@@ -1,3 +1,25 @@
+/* Estilos para el contenedor del video */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  /* Estilos para el video */
+  #bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+
 body {
     display: flex;
     justify-content: center;
@@ -57,14 +79,19 @@ body {
 }
 
 .avatar {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: #e0e0e0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    transition: transform 0.5s ease-in-out; /* Animación de transición */
+}
+
+.avatar:hover {
+    transform: rotate(360deg); /* Efecto de rotación */
 }
 
 .profile p {
@@ -124,6 +151,12 @@ body {
     .logo{
         width: 70px;
         height: 70px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 45px;
+        font-weight: bold;
     }
 }
 
