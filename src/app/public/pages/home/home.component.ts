@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-home',
@@ -8,5 +9,15 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './home.component.scss'
 })
 export default class HomeComponent {
-  
+
+  constructor (private router:Router){
+
+  }
+
+
+  // Go to login
+
+  goToLogin() {
+    this.router.navigate(['auth/login']);
+  }
 }
