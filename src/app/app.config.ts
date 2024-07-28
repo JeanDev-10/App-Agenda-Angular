@@ -9,6 +9,7 @@ import { errorInterceptor } from './core/interceptor/error.interceptor';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideLottieOptions } from 'ngx-lottie';
 import player from 'lottie-web';
+import { MessageService } from 'primeng/api';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -20,6 +21,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideLottieOptions({
       player: () => player,
-    })
+    }),
+    MessageService
   ],
 };

@@ -3,19 +3,24 @@
         <div class="logo">LOGO</div>
         <form class="login-form">
             <label for="name">Nombre</label>
-            <input type="text" id="name"  placeholder="Test">
+            <input type="text" class="ng-invalid ng-dirty" pInputText id="name" placeholder="Test"/>
 
             <label for="lastname">Apellido</label>
-            <input type="text" id="lastname"  placeholder="Prueba">
+            <input type="text" class="ng-invalid ng-dirty" pInputText id="lastname" placeholder="Prueba"/>
 
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="prueba@hotmail.com">
+            <input type="email" class="ng-invalid ng-dirty" pInputText id="email" placeholder="prueba@hotmail.com"/>
             
             <label for="password">Contraseña</label>
-            <input type="password" id="password"  placeholder="xxxxxxxxxxxx">
+            <input type="password" class="ng-invalid ng-dirty" pInputText id="password" placeholder="xxxxxxxxxxxx"/>
             
             <div class="no-account"><a style="cursor: pointer; font-weight: 700;" (click)="Gotologin()">Ya tienes una cuenta?</a></div>
-            <button type="submit">Crear cuenta</button>
+            <p-toast 
+            [showTransformOptions]="'translateY(100%)'" 
+            [showTransitionOptions]="'1000ms'" 
+            [hideTransitionOptions]="'1000ms'" 
+            [showTransformOptions]="'translateX(100%)'" />
+            <p-button class="register_button" label="Crear cuenta" severity="info" (onClick)="show()"/>
         </form>
     </div>
     <div class="right-side">
