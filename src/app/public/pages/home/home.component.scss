@@ -39,8 +39,10 @@ body {
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 2.5rem;
 }
 
 .header {
@@ -48,6 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: -8rem;
 }
 
 .icon {
@@ -149,14 +152,21 @@ body {
     }
 
     .logo{
-        width: 70px;
-        height: 70px;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: .3rem;
+    }
+
+    .header{
+        margin-left: -8rem;
     }
 
     .header h1 {
-        margin: 0;
+        margin: 0 -40px;
         font-size: 45px;
         font-weight: bold;
+        position: relative;
     }
 }
 
