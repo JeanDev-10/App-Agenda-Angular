@@ -35,4 +35,9 @@ export default class LoginComponent {
   show() {
     this.messageService.add({ severity: 'success', summary: 'Enhorabuena!', detail: 'Iniciaste sesión' });
   }
+
+  // redirigir al dashboard 
+  GotoDashboard(){
+    this.router.navigate(['crm/dashboard']);
+  }
 }

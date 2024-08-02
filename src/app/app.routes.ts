@@ -7,7 +7,7 @@ import { loggedGuard } from './core/guards/logged.guard';
         loadChildren:()=>import('./public/public.routes')
     },
     {
-        path: 'dashboard',
+        path: '',
         loadChildren:()=>import('./private/private.routes'),
         canActivate: [loggedGuard] //guardia
     },

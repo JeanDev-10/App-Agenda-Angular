@@ -14,7 +14,7 @@
             [showTransitionOptions]="'1000ms'" 
             [hideTransitionOptions]="'1000ms'" 
             [showTransformOptions]="'translateX(100%)'" />
-            <p-button class="button_login" label="Iniciar sesión" severity="info" (onClick)="show()" />
+            <p-button (click)="GotoDashboard()" class="button_login" label="Iniciar sesión" severity="info" (onClick)="show()" />
         </form>
     </div>
     <div class="right-side">
