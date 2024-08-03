@@ -18,19 +18,19 @@
                     <div class="menu-section-header">Menu</div>
                     <ul class="menu-items">
                         <li class="menu-item">
-                            <a href="crm/dashboard" class="menu-link">
+                            <a routerLink="dashboard" class="menu-link">
                                 <i class="pi pi-home"></i>
                                 <span>Dashboard</span>
                             </a>
-                            <a href="crm/add-contact" class="menu-link">
+                            <a routerLink="add-contact" class="menu-link">
                                 <i class="pi pi-plus"></i>
                                 <span>Añadir contacto</span>
                             </a>
-                            <a href="crm/list-contact" class="menu-link">
+                            <a routerLink="list-contact" class="menu-link">
                                 <i class="pi pi-list"></i>
                                 <span>Lista de contactos</span>
                             </a>
-                            <a (click)="show()" class="menu-link">
+                            <a (click)="logout()" class="menu-link">
                                 <i class="pi pi-sign-out"></i>
                                 <span>Salir</span>
                             </a>
@@ -44,7 +44,7 @@
             <hr>
             <a href="#" class="user-info">
                 <img src="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" alt="User Avatar" class="user-avatar">
-                <span class="user-name">Amy Elsner</span>
+                <span class="user-name">Mí perfil</span>
             </a>
         </div>
     </aside>

@@ -4,8 +4,8 @@ import { LottieComponent, AnimationOptions } from 'ngx-lottie';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
-import { MessageService } from 'primeng/api';
 import { RippleModule } from 'primeng/ripple';
+
 
 @Component({
   selector: 'app-login',
@@ -15,7 +15,7 @@ import { RippleModule } from 'primeng/ripple';
   styleUrl: './login.component.scss'
 })
 export default class LoginComponent {
-  constructor(private router:Router, private messageService: MessageService) {
+  constructor(private router:Router) {
 
    }
 
@@ -30,10 +30,6 @@ export default class LoginComponent {
 
   GotoRegister(){
     this.router.navigate(['auth/register'])
-  }
-
-  show() {
-    this.messageService.add({ severity: 'success', summary: 'Enhorabuena!', detail: 'Iniciaste sesión' });
   }
 
   // redirigir al dashboard 

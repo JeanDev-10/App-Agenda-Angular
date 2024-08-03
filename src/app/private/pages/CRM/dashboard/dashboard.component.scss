@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: row; /* Coloca los gráficos en una columna */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    width: 100%;
+    max-width: 40rem; /* Ajusta el ancho máximo de la tarjeta */
+    padding: 1rem;
+    margin: auto;
+    border-radius: 0.5rem; /* Opcional: bordes redondeados */
+    background-color: #fff; /* Opcional: fondo blanco */
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 30rem; /* Ajusta el ancho máximo de los gráficos */
+    height: auto;
+    margin-bottom: 1rem; /* Espacio entre gráficos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-container:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior del último gráfico */
+}
+
+p-chart {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        margin: 1rem;
+    }
+
+    .chart-container {
+        max-width: 100%;
+    }
+}

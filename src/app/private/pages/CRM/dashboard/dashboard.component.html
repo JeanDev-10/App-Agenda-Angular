@@ -1,1 +1,8 @@
-<p>dashboard works!</p>
+<div class="card">
+    <div class="chart-container">
+        <p-chart type="bar" [data]="basicData" [options]="basicOptions"></p-chart>
+    </div>
+    <div class="chart-container">
+        <p-chart type="doughnut" [data]="data" [options]="options"></p-chart>
+    </div>
+</div>
