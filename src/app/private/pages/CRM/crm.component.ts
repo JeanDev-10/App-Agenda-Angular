@@ -9,6 +9,7 @@ import { Sidebar } from 'primeng/sidebar';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { AlertService } from '../../../core/services/Alert/alert.service';
+import { LocalStorageService } from '../../../core/services/LocalStorage/local-storage.service';
 
 
 @Component({
@@ -20,6 +21,8 @@ import { AlertService } from '../../../core/services/Alert/alert.service';
 })
 export class CRMComponent {
   @ViewChild('sidebarRef') sidebarRef!: Sidebar;
+
+  private readonly localStorage = inject(LocalStorageService);
 
   closeCallback(e: Event): void {
       this.sidebarRef.close(e);
@@ -36,7 +39,7 @@ export class CRMComponent {
   logout() {
     this.alert.success('Sesión cerrada!')
     this.router.navigate(['auth/login']);
-    localStorage.clear();
+    this.localStorage.clearAll();
   }
 
 }
