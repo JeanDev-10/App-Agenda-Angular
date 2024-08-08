@@ -1,15 +1,17 @@
 import { Routes } from '@angular/router';
 import { loggedGuard } from './core/guards/logged.guard';
+import { desloggedGuard } from './core/guards/deslogged.guard';
 
  export const routes:Routes=[
     {
         path: '',
-        loadChildren:()=>import('./public/public.routes')
+        loadChildren:()=>import('./public/public.routes'),
+        canActivate: [desloggedGuard] //guardia para saber si esta loguiado 
     },
     {
-        path: 'dashboard',
+        path: '',
         loadChildren:()=>import('./private/private.routes'),
-        canActivate: [loggedGuard] //guardia
+        canActivate: [loggedGuard] //guardia para saber si no esta logiado
     },
     {
       path:'**',

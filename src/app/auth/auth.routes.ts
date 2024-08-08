@@ -3,7 +3,7 @@ import { Routes } from "@angular/router";
 export default [
     {
       path:'',
-      redirectTo:"register",
+      redirectTo:"login",
       pathMatch:'full'
     },
     { path: 'register', loadComponent: () => import('./pages/register/register.component')},

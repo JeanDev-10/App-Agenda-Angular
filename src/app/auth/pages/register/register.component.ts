@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { LottieComponent, AnimationOptions } from 'ngx-lottie';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
 import { RippleModule } from 'primeng/ripple';
-import { MessageService } from 'primeng/api';
+import { AlertService } from '../../../core/services/Alert/alert.service';
 
 @Component({
   selector: 'app-register',
@@ -16,7 +16,9 @@ import { MessageService } from 'primeng/api';
 })
 export default class RegisterComponent {
 
-  constructor(private router:Router, private messageService:MessageService) { 
+  private readonly alerts = inject(AlertService);
+
+  constructor(private router:Router) { 
 
   }
 
@@ -36,7 +38,8 @@ export default class RegisterComponent {
   }
 
   
-  show() {
-    this.messageService.add({ severity: 'success', summary: 'Enhorabuena!', detail: 'Se creo tu cuenta' });
+  register() {
+    this.alerts.success('Enhorabuena!, tu cuenta se creó correctamente.')
+    this.router.navigate(['auth/login']);
   }
 }

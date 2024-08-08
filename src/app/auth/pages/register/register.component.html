@@ -15,12 +15,8 @@
             <input type="password" class="ng-invalid ng-dirty" pInputText id="password" placeholder="xxxxxxxxxxxx"/>
             
             <div class="no-account"><a style="cursor: pointer; font-weight: 700;" (click)="Gotologin()">Ya tienes una cuenta?</a></div>
-            <p-toast 
-            [showTransformOptions]="'translateY(100%)'" 
-            [showTransitionOptions]="'1000ms'" 
-            [hideTransitionOptions]="'1000ms'" 
-            [showTransformOptions]="'translateX(100%)'" />
-            <p-button class="register_button" label="Crear cuenta" severity="info" (onClick)="show()"/>
+
+            <p-button class="register_button" label="Crear cuenta" severity="info" (onClick)="register()"/>
         </form>
     </div>
     <div class="right-side">
