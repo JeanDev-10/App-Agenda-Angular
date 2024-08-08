@@ -34,6 +34,7 @@ export default class LoginComponent {
 
   // redirigir al dashboard 
   GotoDashboard(){
+    localStorage.setItem('token', '71|i1IXZw6JwbHnTxYqbuDfG3OatBV6TKtJXOAvX4qp437c5b42')
     this.router.navigate(['crm/dashboard']);
   }
 }

@@ -47,7 +47,8 @@ export class CRMComponent {
       icon: "success",
       title: "Sesión cerrada!"
     });
-    this.router.navigate(['auth/login'])
+    this.router.navigate(['auth/login']);
+    localStorage.clear();
   }
 
 }
