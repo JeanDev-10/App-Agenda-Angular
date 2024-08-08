@@ -12,13 +12,13 @@ export class LocalStorageService {
 
   constructor() { }
 
-  saveItem(key: string, value: any): void {
-    localStorage.setItem(key, JSON.stringify(value));
+  saveItem(key: string, value: string): void {
+    localStorage.setItem(key, value);
   }
 
   getItem(key: string): any {
     const item = localStorage.getItem(key);
-    return item? JSON.parse(item) : null;
+    return item? item : null;
   }
 
   removeItem(key: string): void {
